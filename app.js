@@ -36,8 +36,8 @@ app.post('/send', (req, res) => {
   `;
 
   const account = {
-     user: 'ocabrisses@precision-solutions.com',
-     pass: 'Belowpar5!'
+     user: 'viss@vissrecords.com',
+     pass: '****'
 }
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
@@ -55,10 +55,10 @@ app.post('/send', (req, res) => {
 
   // setup email data with unicode symbols
   let mailOptions = {
-      from: '"Osker Cabrisses" <ocabrisses@precision-solutions.com>', // sender address
+      from: '"Drew Visser" <viss@vissrecords.com>', // sender address
       to: 'joshua.visser@hotmail.com', // list of receivers
-      subject: 'Employment Marketing', // Subject line
-      text: 'Testing', // plain text body
+      subject: 'Testing Email', // Subject line
+      text: 'Testing my node application, if you are recieving this I passed.', // plain text body
       html: output // html body
   };
 
