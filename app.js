@@ -36,7 +36,7 @@ app.post('/send', (req, res) => {
   `;
 
   const account = {
-     user: 'viss@vissrecords.com',
+     user: 'a.vissproductions.com',
      pass: '****'
 }
   // create reusable transporter object using the default SMTP transport
@@ -55,7 +55,7 @@ app.post('/send', (req, res) => {
 
   // setup email data with unicode symbols
   let mailOptions = {
-      from: '"Drew Visser" <viss@vissrecords.com>', // sender address
+      from: '"Drew Visser" <a.vissproductions.com>', // sender address
       to: 'joshua.visser@hotmail.com', // list of receivers
       subject: 'Testing Email', // Subject line
       text: 'Testing my node application, if you are recieving this I passed.', // plain text body
